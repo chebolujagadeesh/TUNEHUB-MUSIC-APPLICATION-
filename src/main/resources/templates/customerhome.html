@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Customer Home</title>
+<link th:href="@{/sample.css}" rel="stylesheet" />
+<style>
+body{
+  background-image:url(/music3.png);
+    min-height: 100%;
+
+   background-repeat: no-repeat;
+   background-position: center;
+
+}
+
+button
+{        
+     border-color: rgb(133, 8, 250);
+    height: auto;
+    width:230px;
+    border-radius:20px;
+    padding:10px;
+    margin-top:15px;  
+    font-size: 18px;
+    background-color:black;
+    color:white;
+}
+button:hover
+{
+    cursor: pointer;
+}
+.logout
+{
+width: 100px;
+font-size: 13px;
+background-color: black;
+color:white;
+position: absolute;
+bottom: 50px;
+right: 150px;
+}
+
+</style>
+</head>
+<body>
+<nav>
+         <img src="/logo2.png" style="height: 80px ; width: 85px">
+         
+          <ul>
+          <li><a href="/home">HOME</a></li>
+          <li> <a href="/about">ABOUT US</a></li>
+          <li> <a href="/contact" >CONTACT US</a></li>
+          <li> <a href="" >SETTINGS</a></li>
+          
+        </ul>
+    
+  </nav>    
+<a href="/logout"><button class='logout'>LOG OUT</button></a>
+<center>
+<a href="/profile"><img src="/836.jpg" style="height: 80px ; width: 80px ; position: absolute; right: 0;"></a>
+<h4 style=" position: absolute; right: 4px; top:160px;">My profile</h4>
+<h1> Welcome to Customer Home</h1>
+<br>
+<br>
+<hr color='black' width='40%'>
+<br>
+
+<a href="/exploresongs"><button>Explore Songs</button></a>
+<br>
+<a href="samplepayment"><button>Pay with razorpay</button></a>
+<br>
+<a href="/viewplaylist"><button>View Playlist</button></a>
+<br>
+<a href="/map-playlist"><button>Create Playlist</button></a>
+</center>
+
+
+
+
+
+
+
+</body>
+</html>

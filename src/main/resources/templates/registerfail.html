@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register Fail</title>
+<style>
+body{
+background-image:url(/music3.png);
+ min-height: 100%;
+
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+
+}
+table{
+background-color:#add8e6;
+border: 2px solid black;
+border-radius:20px;
+
+padding:30px;
+
+ padding-bottom:100px;
+ padding-right: 45px;
+}
+h2
+{
+color: red;
+}
+input
+{
+     border-color: rgb(133, 8, 250);  
+    border-radius:10px;
+    height: 30px;
+                 margin:3px;
+}
+input:hover
+{
+    cursor: pointer;
+}
+.submit
+{
+margin-top:70px;
+ width: 130px;
+height: 40px;
+background-color:black;
+color:white;
+
+}
+
+</style>
+</head>
+<body>
+<img src="/logo2.png" style="height: 100px ; width: 100px ; position: absolute ; top: 0 " >
+<center>
+<h2>"Email Id already exists, Register with an another Email"</h2>
+
+<h1>Registration Form</h1>
+<hr color='black' width='40%'><br>
+<table>
+
+<form action="/register" method="post" >
+<tr>
+<td >User Name :
+<td><input type="text" name="username" />
+</tr>
+<tr>
+<td >
+E-mail Id :
+<td>
+<input type="email" name="email" />
+</tr>
+<tr>
+<td >
+Password :
+<td>
+<input type="password" name="password" />
+</tr>
+<tr>
+
+<td>Gender :
+<td><input type="radio" name="gender" value="male" />M
+<input type="radio" name="gender"  value="female" />F
+<input type="radio" name="gender"  value="others"  />O
+</tr>
+<tr>
+<td >Role:
+<td><input type="radio" name="role" value="admin" />Admin
+<input type="radio" name="role"  value="customer" />Customer
+</tr>
+<tr>
+<td >Address:
+<td><textarea rows="5" columns="7" name="address"> </textarea>
+</tr>
+<tr>
+<td>
+<td>
+<input type="submit" class='submit' value="REGISTER"/>
+</tr>
+</form>
+</table>
+</center>
+</body>
+</html>

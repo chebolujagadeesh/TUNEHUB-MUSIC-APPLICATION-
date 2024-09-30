@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="ISO-8859-1">
+
+<title>TuneHub Applicattion</title>
+
+<link th:href="@{/sample.css}" rel="stylesheet" />
+<style>
+body{
+    text-align: center;
+    min-height: 100vh;
+   /* background: linear-gradient(-135deg,#d5e80c,#2664f4);*/
+    color:rgb(17, 17, 16);
+    background-image: url(/music4.jpg);
+   
+    background-size: cover;
+}
+button
+{
+     border-color: rgb(133, 8, 250);
+    height: auto;
+    width:230px;
+    border-radius:20px;
+    padding:10px;
+    margin-top:15px;  
+    font-size: 18px;
+}
+button:hover
+{
+    cursor: pointer;
+}
+
+</style>
+
+</head>
+<body>
+<img src="/logo2.png" style="height: 100px ; width: 100px">
+<h1>Welcome to TuneHub Application</h1>
+<br>
+<center>
+<hr color='black' width='40%'>
+</center>
+<br>
+<br>
+<br>
+<a href="/map-register"><button>Register</button></a>
+<br/>
+<a href="/map-login"> <button> Login</button></a>
+
+</body>
+</html>

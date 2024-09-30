@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Playlist page</title>
+<style>
+
+body{
+    background-image:url(/music3.png);
+ min-height: 100%;
+
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+table
+{
+background-color:   #add8e6;
+border: 3px solid black;
+padding: 20px;
+border-radius: 30px;
+}
+th
+{
+padding: 20px;
+font-size: 20px;
+ background-color: orange;
+}
+td{
+padding: 0px;
+text-align: center;
+font-size: 15px;
+}
+.logout
+{
+height:35px;
+border-radius:25px;
+width: 100px;
+font-size: 13px;
+background-color: black;
+color:white;
+position: absolute;
+bottom: 50px;
+right: 150px;
+}
+.navbar
+{
+background-color: black;
+}
+
+.navbar ul
+{ 
+display:inline;
+position:absolute;
+	top:20px;
+  right: 40px;
+}
+.navbar a
+{
+text-decoration: none;
+	color:white;
+}
+.navbar li
+{
+display:inline;
+
+margin-right: 70px;
+}
+
+</style>
+
+
+</head>
+<body>
+     
+ <nav class="navbar">
+         <img src="/logo2.png" style="height: 80px ; width: 80px">
+         
+          <ul>
+          <li><a href="/home">HOME</a></li>
+          <li> <a href="/about">ABOUT US</a></li>
+          <li> <a href="/contact" >CONTACT US</a></li>
+          <li> <a href="" >SETTINGS</a></li>
+        </ul>
+    
+  </nav>   
+<a href="/logout"><button class='logout'>LOG OUT</button>
+<center>
+<a href="/profile"><img src="/836.jpg" style="height: 80px ; width: 80px ; position: absolute; right: 0;"></a>
+<h4 style=" position: absolute; right: 4px; top:160px;">My profile</h4>
+ <h1> Playlists</h1>
+ <hr color='black' width='40%'>
+<br>
+ <table border>
+ <thead>
+<tr>
+   <th>Playlist Id
+   <th>PlayList Name
+   <th>PlayList Songs
+ 
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr th:each="pl:${plist}">
+<td th:text="${pl.id}"></td>
+<td th:text="${pl.playListName}"></td>
+<td> 
+     <ul>
+           <li th:each ="s:${pl.song}">
+           <span th:text="${s.songName}"></span>
+           <audio controls>
+          <source th:src=${s.songLink} type="audio/mpeg">
+           </audio>
+           </li>
+    </ul>
+</td>
+
+
+</tr>
+</tbody>
+</center>
+ </table>
+ 
+</body>
+</html>

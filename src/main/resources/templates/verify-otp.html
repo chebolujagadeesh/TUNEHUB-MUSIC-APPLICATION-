@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP</title>
+    <style>
+body{
+background-image:url(/music3.png);
+ min-height: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+
+}
+table{
+background-color:#add8e6;
+border: 2px solid black;
+border-radius:20px;
+padding:30px;
+
+ padding-right: 45px;
+}
+input
+{
+     border-color: rgb(133, 8, 250);  
+    border-radius:10px;
+    height: 30px;
+    margin:3px;
+ 
+}
+input:hover
+{
+    cursor: pointer;
+}
+.submit
+{
+margin-top:70px;
+ width: 130px;
+height: 40px;
+background-color:black;
+color:white;
+cursor: pointer;
+  border-radius:25px;
+}
+label{
+font-size: 25px;}
+
+</style>
+</head>
+<body>
+<center>
+    <h1>Enter OTP</h1>
+    <hr color='black' width='40%'><br>
+    <form action="/verify-otp" method="post">
+        <label for="otp">Enter OTP:</label>
+        <input type="text" id="otp" name="otp" required><br><br>
+        <button type="submit" class="submit">Submit</button>
+    </form>
+    </center>
+</body>
+</html>

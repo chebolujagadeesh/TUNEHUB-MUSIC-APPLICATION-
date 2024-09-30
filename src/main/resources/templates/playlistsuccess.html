@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>PlayList Page</title>
+<style>
+body
+{
+   background-color:  #FF9671;
+
+   
+ }
+ h1{
+    margin-top: 100px;
+    color:white;
+    border: 3px solid black;
+    border-radius: 40px;
+background-color: rgb(236, 15, 174);
+height: 150px;
+width: 400px;
+padding:50px;
+}
+.logout
+{
+height:35px;
+border-radius:25px;
+width: 100px;
+font-size: 13px;
+background-color: black;
+color:white;
+position: absolute;
+bottom: 50px;
+right: 150px;
+}
+
+</style>
+<link th:href="@{/sample.css}" rel="stylesheet" />
+
+</head>
+<body>
+<div>
+ <nav>
+          
+        <ul>
+           <li><a href="/home">HOME</a></li>
+          <li> <a href="/about">ABOUT US</a></li>
+          <li> <a href="/contact" >CONTACT US</a></li>
+          <li> <a href="" >SETTINGS</a></li>
+          
+        </ul>
+      </nav>
+</div>
+<a href="/logout"><button class='logout'>LOG OUT</button></a>
+<center>
+<a href="/profile"><img src="/836.jpg" style="height: 80px ; width: 80px ; position: absolute; right: 0;"></a>
+<h4 style=" position: absolute; right: 4px; top:160px;">My profile</h4>
+ <h1>PlayList added successfully</h1>
+
+ </center>
+</body>
+</html>

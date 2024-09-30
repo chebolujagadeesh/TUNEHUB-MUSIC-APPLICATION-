@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+<style>
+body{
+background-image:url(/music3.png);
+ min-height: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+
+}
+table{
+background-color:#add8e6;
+border: 2px solid black;
+border-radius:20px;
+padding:30px;
+
+ padding-right: 45px;
+}
+input
+{
+     border-color: rgb(133, 8, 250);  
+    border-radius:10px;
+    height: 30px;
+    margin:3px;
+ 
+}
+input:hover
+{
+    cursor: pointer;
+}
+.submit
+{
+margin-top:70px;
+ width: 130px;
+height: 40px;
+background-color:black;
+color:white;
+
+}
+
+</style>
+</head>
+<body>
+<img src="/logo2.png" style="height: 100px ; width: 100px ; position: absolute ; top: 0 " >
+<center>
+<h1>Login Form</h1>
+<hr color='black' width='40%'><br>
+<table>
+
+<form action="/login" method="post" >
+     <tr>
+<td >
+E-mail Id :
+<td>
+<input type="email" name="email" required="required" />
+</tr>
+  <tr>
+<td >
+Password :
+<td>
+<input type="password" name="password" />
+</tr> 
+<tr>
+<td>
+<td>
+<input type="submit" class='submit' value="LOGIN"/>
+</tr>  
+</form>
+</table>
+  <br>
+    <a href="/forgot-password"><h3>forgot password</h3></a>
+</center>
+</body>
+</html>
